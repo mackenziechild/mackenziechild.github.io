@@ -1,0 +1,143 @@
+$main:      #253245
+$secondary: #768093
+$highlight: #aad9f1
+
+body
+  font-family: "brandon-grotesque",sans-serif
+  font-size: 16px
+  padding: 5rem 0
+  background: url('../images/bg.svg')
+  background-repeat: repeat
+  background-size: 350px
+
+.wrapper
+  width: 600px
+  max-width: 90%
+  margin: 0 auto 5rem auto
+  text-align: center
+
+.cf:before,
+.cf:after
+  content: " "
+  display: table
+
+.cf:after
+  clear: both
+
+.chico
+  margin: 0 auto 3rem auto
+  width: 150px
+
+h1
+  color: $main
+  font-size: 2rem
+  font-weight: 900
+  line-height: 1.25
+  text-transform: uppercase
+
+p
+  font-size: 1.25rem
+  color: $secondary
+  line-height: 1.6
+
+a
+  color: $highlight
+
+.form-wrapper
+  display: inline-block
+  margin: 1rem auto 4 auto
+  clear: both
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, div, input, button
+  font-family: "brandon-grotesque",sans-serif
+
+input
+  font-family: "brandon-grotesque",sans-serif
+  background: #f0f1f5
+  padding: 1.5rem 2rem
+  outline: none
+  border: none
+  border-radius: .35rem 0 0 .35rem
+  color: #768094
+  font-size: 0.7rem
+  font-weight: 900
+  text-transform: uppercase
+
+input[type="submit"]
+  background: $highlight
+  border-radius: 0 .35rem .35rem 0
+  color: #FFF
+  cursor: pointer
+
+// Coach styling overrides
+
+.-clp-container
+  -moz-box-shadow: rgba(94, 111, 158, 0.26) 0 7px 42px
+  -webkit-box-shadow: rgba(94, 111, 158, 0.26) 0 7px 42px
+  box-shadow: rgba(94, 111, 158, 0.26) 0 7px 42px
+  border: none !important
+
+.-clp-headline, .-clp-container input[type="email"]
+  font-family: "brandon-grotesque",sans-serif !important
+
+.-clp-container input[type="email"]
+  background-color: #f0f1f5 !important
+  color: #768094
+  border: none
+
+.-clp-container input
+  font-size: 13px !important
+  line-height: 13px !important
+
+
+// Media Queries
+
+@media only screen and (max-width: 500px)
+  body
+    font-family: "brandon-grotesque",sans-serif
+    font-size: 16px
+    padding: 3rem 0 0 0
+
+  .wrapper
+    margin: 0 auto 3rem auto
+
+  .chico
+    margin: 0 auto 2rem auto
+    width: 100px
+
+  h1
+    font-size: 1.5rem
+
+  p
+    font-size: 1.1rem
+    color: $secondary
+    line-height: 1.4
+
+  a
+    color: $highlight
+
+  .form-wrapper
+    display: inline-block
+    margin: 1rem auto 4 auto
+    clear: both
+
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li, div, input, button
+    font-family: "brandon-grotesque",sans-serif
+
+  input
+    font-family: "brandon-grotesque",sans-serif
+    background: #f0f1f5
+    padding: 1.5rem 2rem
+    outline: none
+    border: none
+    border-radius: .35rem 0 0 .35rem
+    color: #768094
+    font-size: 0.7rem
+    font-weight: 900
+    text-transform: uppercase
+
+  input[type="submit"]
+    background: $highlight
+    border-radius: 0 .35rem .35rem 0
+    color: #FFF
+    cursor: pointer
